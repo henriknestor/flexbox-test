@@ -2,6 +2,27 @@ body {
     background-color: #370617;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+section {
+    display: inline-block;
+    margin: 10px;
+    /* Section-marginalen beter sig annorlunda än class-marginalerna, se rad 37 */
+}
+
+p {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .container_top-left {
     display: flex;
     width: 468px;
@@ -11,7 +32,9 @@ body {
     background: #F48C06;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 10px;
-    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* Hur kommer det sig att container-klassernas marginaler överlappar varandra medan section-klassens marginaler inte överlappar? */
     align-items: end;
 }
 
@@ -23,6 +46,7 @@ body {
     border-radius: 4px;
     background: #9D0208;
     margin: 10px;
+    justify-content: center;
 }
 
 .container_mid-left {
@@ -34,11 +58,91 @@ body {
     background: #F48C06;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 10px;
-    margin: 10px;
-    align-items: end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: end;
 }
 
 .card-shadow {
+    display: flex;
+    width: 78px;
+    height: 78px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #9D0208;
+    margin: 10px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container_bottom-left {
+    display: flex;
+    width: 468px;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F48C06;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    align-items: baseline;
+    /* Förstår inte hur man får både text och objekt att hamna rätt */
+    justify-content: space-around;
+}
+
+.card-tall {
+    display: flex;
+    width: 78px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #9D0208;
+    margin: 10px;
+    justify-content: center;
+    align-self: stretch;
+}
+
+.container_top-right {
+    display: flex;
+    width: 468px;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F48C06;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.container_mid-right {
+    display: flex;
+    width: 468px;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F48C06;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: end;
+}
+
+.card-shadow-up {
+    display: flex;
+    width: 78px;
+    height: 78px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #9D0208;
+    margin: 10px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-shadow-down {
     display: flex;
     width: 78px;
     height: 78px;
