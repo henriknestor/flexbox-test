@@ -1,0 +1,24 @@
+body {
+    background-color: #370617;
+}
+
+.flex-test {
+    background-color: rgb(165, 222, 248);
+    display: flex;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.flex-heading {
+    font-family: 'Courier New', Courier, monospace;
+    color: blueviolet;
+}
+
+.flexbox_1 {
+    display: flex;
+    width:200px;
+    height: 300px;
+    background-color: rgb(237, 137, 60);
+}
