@@ -3,14 +3,18 @@ body {
 }
 
 main {
+    margin-top: 90px;
     display: flex;
     justify-content: center;
-    margin-top: 5vh;
+    flex-wrap: wrap;
 }
+
 
 section {
     display: inline-block;
-    margin: 10px;
+    margin-top: -20px;
+    margin-left: 10px;
+    margin-right: 10px;
     /* Section-marginalen beter sig annorlunda än class-marginalerna, se rad 37 */
 }
 
