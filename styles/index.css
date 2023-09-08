@@ -15,162 +15,86 @@ section {
     margin-top: -20px;
     margin-left: 10px;
     margin-right: 10px;
-    /* Section-marginalen beter sig annorlunda än class-marginalerna, se rad 37 */
+    /* Section-marginalen beter sig annorlunda än class-marginalerna */
 }
 
-p {
+
+.container {
+    display: flex;
+    width: 468px;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F48C06;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* Container-klassernas marginaler överlappar varandra medan section-klassens marginaler inte tycks överlappa ..? */
+}
+
+.bottom-left {
+    align-items: end;
+}
+
+.center-right {
+    align-items: center;
+    justify-content: end;
+}
+
+.baseline-stretch {
+    align-items: baseline;
+    justify-content: space-around;
+    /* Förstår inte hur man får både text och objekt att hamna rätt */
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.tl-tc-br {
+    align-items: start;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    min-height: 78px;
+    width: 78px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #9D0208;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tall {
+    align-self: stretch;
+}
+
+.compressed {
+    flex-shrink: 1;
+}
+
+.shadow {
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.wide {
+    flex-grow: 0.5;
+}
+
+.down {
+    align-self: flex-end;
+}
+
+.card__info {
     color: #FFF;
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
-
-.container_top-left {
-    display: flex;
-    width: 468px;
-    height: 160px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    background: #F48C06;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    /* Hur kommer det sig att container-klassernas marginaler överlappar varandra medan section-klassens marginaler inte överlappar? */
-    align-items: end;
-}
-
-.card {
-    display: flex;
-    width: 78px;
-    height: 78px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    background: #9D0208;
-    margin: 10px;
-    justify-content: center;
-}
-
-.container_mid-left {
-    display: flex;
-    width: 468px;
-    height: 160px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    background: #F48C06;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    align-items: center;
-    justify-content: end;
-}
-
-.card-shadow {
-    display: flex;
-    width: 78px;
-    height: 78px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    background: #9D0208;
-    margin: 10px;
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.container_bottom-left {
-    display: flex;
-    width: 468px;
-    height: 160px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    background: #F48C06;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    align-items: center;
-    align-items: baseline;
-    /* Förstår inte hur man får både text och objekt att hamna rätt */
-    justify-content: space-around;
-}
-
-.card-tall {
-    display: flex;
-    width: 78px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    background: #9D0208;
-    margin: 10px;
-    justify-content: center;
-    align-self: stretch;
-}
-
-.container_top-right {
-    display: flex;
-    width: 468px;
-    height: 160px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    background: #F48C06;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    justify-content: center;
-}
-
-.container_mid-right {
-    display: flex;
-    width: 468px;
-    height: 160px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    background: #F48C06;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    align-items: start;
-    justify-content: space-between;
-}
-
-.card-shadow-down {
-    display: flex;
-    width: 78px;
-    height: 78px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    background: #9D0208;
-    margin: 10px;
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-    align-self: flex-end;
-}
-
-.container_bottom-right {
-    display: flex;
-    width: 468px;
-    height: 160px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    background: #F48C06;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.card-shadow-stretch {
-    display: flex;
-    width: 78px;
-    height: 78px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    background: #9D0208;
-    margin: 10px;
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-    flex-grow: 0.5;
 }
