@@ -43,7 +43,7 @@ section {
 }
 
 .baseline-stretch {
-    align-items: baseline;
+    /* align-items: baseline; */
     justify-content: space-around;
     /* Förstår inte hur man får både text och objekt att hamna rätt */
 }
@@ -60,22 +60,28 @@ section {
 
 .card {
     display: flex;
-    min-height: 78px;
+    /* min-height: 78px; */
     width: 78px;
     flex-shrink: 0;
     border-radius: 4px;
     background: #9D0208;
     margin: 10px;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 
-.tall {
-    align-self: stretch;
+.square {
+    min-height: 78px;
 }
 
+/* .tall {
+    align-self: stretch;
+} */
+
 .compressed {
-    flex-shrink: 1;
+    height: 64px;
+    /* Fattar inte hur jag ska få denna att bli 64 pixlar hög utan att flytta ut min-height till en egen klass ..? */
+    margin-top: 43px;
 }
 
 .shadow {
@@ -97,4 +103,33 @@ section {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+
+/* jag får inte align-items/baseline att funka så jag testade att återskapa det hela, får det ändå inte att funka :( */
+
+.testbox {
+    background-color: aqua;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.testcard {
+    background:#FFF;
+    margin: 10px;
+    width: 100px;
+    min-height: 100px;
+    align-items: baseline;
+}
+
+.large {
+    align-self: stretch;
+}
+
+.cardtext {
+    font-family: 'Courier New', Courier, monospace;
 }
